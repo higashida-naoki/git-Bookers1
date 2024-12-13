@@ -1,14 +1,19 @@
-<h1>Bookers#show</h1>
+<html>
+  <head></head>
+  <body>
+    <p id="care">Book was successfully created.</p>
 
-<h2>New book</h2>
+    <p>
+      <strong>Title:</strong>
 
-<%= form_with model: @book, url: '/books', method: :post do |f| %>
-  <h4>Title</h4>
-  <%= f.text_field :Title %>
-	
-  <h4>Body</h4>
-  <%= f.text_area :Body %>
-	
-  <h4>sent</h4>
-  <%= f.submit 'Create Book' %>
-<% end %>
+    </p>
+    <p>
+      <strong>Body:</strong>
+    
+    </p>
+    <a class="edit" href="<%= edit_path(@book) %>">Edit</a>
+    " | "
+    <a class="back" href="/books">Back</a>
+  </body>
+</html>
+
